@@ -1,0 +1,67 @@
+{% extends 'vehicle/mechanicbase.html' %}
+{% load static %}
+{% block content %}
+
+	<!-- main content -->
+	<div class="wrapper">
+
+<!-- ****** cards start ********** -->
+		<div class="row">
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-primary">
+					<p>
+						<i class="fas fa-tasks"></i>
+					</p>
+					<h3>{{new_work_assigned}}</h3>
+					<p>New Work Assigned</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-warning">
+					<p>
+						<i class="fas fa-spinner"></i>
+					</p>
+					<h3>{{work_in_progress}}</h3>
+					<p>Work In Progress</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-success">
+					<p>
+						<i class="fas fa-check-circle"></i>
+					</p>
+					<h3>{{work_completed}}</h3>
+					<p>Work Completed</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-danger">
+					<p>
+						<i class="fas fa-rupee-sign"></i>
+					</p>
+					<h3>{{salary}}</h3>
+					<p>Salary</p>
+				</div>
+			</div>
+		</div><br><br><br><br>
+	 <marquee behavior="slide" direction="right">
+   <img src="{% static "images/mercedes.png" %}" width="120" height="80" alt="Mercedes" />
+   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
+      <img src="{% static "images/bentley.jpg" %}" width="120" height="80" alt="Bentley" />
+   <img src="{% static "images/fordmustang.png" %}" width="120" height="80" alt="Ford Mustang" />
+   <img src="{% static "images/rollsroyce.png" %}" width="140" height="80" alt="Rolls Royce" />
+   <img src="{% static "images/mg.png" %}" width="140" height="80" alt="MG" />
+   <img src="{% static "images/tatamotors.png" %}" width="120" height="80" alt="Tata" />
+   <img src="{% static "images/landrover.png" %}" width="120" height="80" alt="Land Rover" />
+   <img src="{% static "images/mini.png" %}" width="120" height="80" alt="Mini Cooper" />
+         <img src="{% static "images/bmw.png" %}" width="120" height="80" alt="BMW" />
+ </marquee>
+	 <br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+
+<!-- ****** cards end ********** -->
+
+
+	<!-- end main content -->
+{% endblock content %}
